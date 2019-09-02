@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  line-height: 1;
+}
+
+.main-container {
+/*  height: 100vh;
+  width: 100vw;*/
+  /*padding: 1rem;*/
+}
+
+
+.color-primary-0 { color: #93A1A1 } /* Main Primary color */
+.color-primary-1 { color: #FAFAFA }
+.color-primary-2 { color: #C9CECE }
+.color-primary-3 { color: #708787 }
+.color-primary-4 { color: #517373 }
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header {
+  /*background-color: #F0F0F0;*/
+  width: 100%;
+  /*border-bottom: 1px solid #708787;*/
+}
+
+.banner {
+  background-color: #FAFAFA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 5px #708787;
+}
+
+.banner .item {
+  padding: 1.5rem;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.item.name {
+  font-size: 3rem; 
+  padding-left: 2.5rem; 
+}
+.item.email {
+  padding-right: 1.5rem;
+}
+
+nav.menu {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.menu ul.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*align-items: center;*/
+  width: 80%;
+}
+
+.menu ul.menu li {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-family: 'Gentium Basic', serif;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  background-color: #E0E0E0;
+  /*border-top: 1px solid #93A1A1;*/
+  border: 1px solid #708787;
+  border: 1px solid #C9CECE;
+  border-radius: 2px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  /*box-shadow: 0 20px 5px 15px red;*/
+}
+
+.content-title {
+  border-bottom: 1px solid #708787;
+  width: 60%;
+  /*box-shadow: 0 0 5px #708787;*/
+  display: flex;
+  justify-content: center;
+}
+
+.content-title h1 {
+
+  line-height: 2rem;
+  font-size: 2.25rem;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  font-family: 'Lexend Zetta', sans-serif;
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'Righteous', cursive;
+  font-family: 'Ezcar', serif;
+}
+
+.content-container {
+  /*width: 60%;*/
+}
+
+.content-container p {
+  display: block;
+  margin: 1rem;
+  line-height: 1.25rem;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Gentium Basic', serif;
+  /*font-family: 'Noto Sans', sans-serif;*/
+}
