@@ -24,7 +24,7 @@
   justify-content: center;
 }
 
-.header {
+.header-container {
   /*background-color: #F0F0F0;*/
   width: 100%;
   /*border-bottom: 1px solid #708787;*/
@@ -46,6 +46,12 @@
 .item.name {
   font-size: 3rem; 
   padding-left: 2.5rem; 
+}
+.item.name a, .menu li a {
+  text-decoration: none;
+}
+.item.name a:link, .item.name a:visited, .menu li a:link, .menu li a:visited {
+  color: #000;
 }
 .item.email {
   padding-right: 1.5rem;

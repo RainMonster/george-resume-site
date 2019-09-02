@@ -6,4 +6,4 @@ Navigation : Bio | Education | Work Experience | Talks | Blog | Links
 
 Solarized (light) type of color pallette
 
- 
+ https://ethanschoonover.com/solarized/
