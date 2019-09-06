@@ -5,6 +5,21 @@
   line-height: 1;
 }
 
+@font-face {
+  font-family: "Eczar";
+  src: url('./fonts/Eczar/Eczar-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Fjalla One";
+  src: url('./fonts/Fjalla_One/FjallaOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Gentium Basic";
+  src: url('./fonts/Gentium_Basic/GentiumBasic-Regular.ttf');
+}
+
 .main-container {
 /*  height: 100vh;
   width: 100vw;*/
@@ -107,7 +122,7 @@ nav.menu-container {
   font-size: 2.25rem;
   padding: 1rem 0;
   margin-top: 1rem;
-  font-family: 'Ezcar', serif;
+  font-family: 'Eczar', serif;
 }
 
 .content-container {
