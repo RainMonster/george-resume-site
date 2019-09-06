@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-size: 100%;
-  line-height: 1;
 }
 
 @font-face {
@@ -41,6 +40,7 @@
 
 .header-container {
   width: 100%;
+  height: 158px;
 }
 
 .banner {
@@ -60,19 +60,58 @@
   font-size: 3rem; 
   padding-left: 2.5rem; 
 }
+
+.item.name a, 
+.menu li a {
+  display: block;
+}
+
 .item.name a, 
 .menu li a,
 .menu-toggle {
   text-decoration: none;
 }
-.item.name a:link, 
+
+.item.name a, 
 .item.name a:visited, 
-.menu li a:link, 
+.menu li a, 
 .menu li a:visited,
 .menu-toggle:link,
 .menu-toggle:visited {
   color: #000;
 }
+
+/*.item.name a:link {
+  color: black;
+  text-shadow: 0 0 black;
+  transition: all 0.3s ease-out;
+}
+
+.item.name a:hover {
+  text-shadow: 0px 0px 5px #d9a0eb;
+  color: #57405e;
+}*/
+
+.item.name a {
+  background-image: -webkit-linear-gradient(left, black 25%, #3EBAC6 37.5%, #8B539E, #E53782 62.5%, black 75%);
+  background-image: linear-gradient(90deg, black 25%, #3EBAC6 37.5%, #8B539E, #E53782 62.5%, black 75%);
+  background-position: right center;
+  background-size: 400% auto;
+  color: black;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  transition: color 200ms linear;
+  cursor: pointer;
+}
+
+.item.name a:hover {
+  background-position: left center;
+  transition: background-position 2000ms ease-out;
+  cursor: pointer;
+}
+
 .item.email {
   padding-right: 1.5rem;
 }
@@ -91,14 +130,18 @@ nav.menu-container {
   width: 80%;
 }
 
-.menu-container ul.menu li {
+.menu-container ul.menu li a {
   font-family: 'Gentium Basic', serif;
   padding: 0.75rem 1.5rem;
   font-size: 1.25rem;
   background-color: #E0E0E0;
-  border: 1px solid #708787;
-  border: 1px solid #C9CECE;
+  box-shadow: 0 1px 2px #708787;
+  /*border: 1px solid #C9CECE;*/
   border-radius: 2px;
+}
+
+.menu-container ul.menu li a:hover {
+  box-shadow: 0 2px 3px #C9CECE;
 }
 
 .main-content {
@@ -118,7 +161,7 @@ nav.menu-container {
 }
 
 .content-title h1 {
-  line-height: 2rem;
+  line-height: 2.5rem;
   font-size: 2.25rem;
   padding: 1rem 0;
   margin-top: 1rem;
@@ -141,20 +184,24 @@ nav.menu-container {
   font-family: 'Gentium Basic', serif;
   padding: 0.75rem 1.5rem;
   font-size: 1.25rem;
+  line-height: 1.25rem;
   background-color: #E0E0E0;
   border: 1px solid #C9CECE;
   border-radius: 2px;
   padding: 0.2rem 0.55rem 0.25rem 0.45rem;
   height: 1rem;
   width: 1rem;
-  cursor: pointer;
   align-self: flex-end;
   margin-bottom: 0.25rem;
 }
 
 @media only screen and (max-width: 926px) {
+  .header-container {
+    height: inherit;
+  }
   .menu-toggle {
     display: initial;
+    border-radius: 2px;
   }
   .menu-container {
     flex-direction: column;
@@ -167,5 +214,13 @@ nav.menu-container {
   }
   .menu-container ul.menu.menu-toggleShow {
     display: flex;
+  }
+  .menu-container ul.menu li a {
+    border-radius: 0;
+
+  }
+  .menu-container ul.menu li a:hover {
+    box-shadow: 0 1px 2px #708787;
+    /*box-shadow: 0;*/
   }
 }
