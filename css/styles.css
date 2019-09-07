@@ -121,7 +121,7 @@ nav.menu-container {
   width: 80%;
 }
 
-.menu-container ul.menu li a {
+.menu-container ul.menu li {
   font-family: 'Gentium Basic', serif;
   padding: 0.75rem 1.5rem;
   font-size: 1.25rem;
@@ -130,8 +130,12 @@ nav.menu-container {
   border-radius: 2px;
 }
 
-.menu-container ul.menu li a:hover {
+.menu-container ul.menu li:hover {
   box-shadow: 0 2px 3px #C9CECE;
+}
+
+.menu-container ul.menu li.active {
+  box-shadow: 0 2px 3px #7a757d;
 }
 
 .main-content {
