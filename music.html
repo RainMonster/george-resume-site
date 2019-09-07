@@ -3,17 +3,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <title>George Kierstein</title>
-  <meta name="description" content="George Kierstein">
-  <meta name="author" content="Rain Jezek">
-  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Gentium+Basic|Ezcar&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width">
+  <title>Music</title>
+  <meta name="description" content="Music">
+  <meta name="author" content="R. Jezek">
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 
 </head>
 
 <body>
-  <script src="js/scripts.js"></script>
   <div class="main-container" role="banner">
     <header class="header-container">
       <div class="header">
@@ -28,7 +26,7 @@
             &#9776;
           </a>
           <ul class="menu">
-            <li><a href="./music.html">Music</a></li>
+            <li class="active"><a href="./music.html">Music</a></li>
             <li><a href="./education.html">Education</a></li>
             <li><a href="./work-experience.html">Work Experience</a></li>
             <li><a href="./talks.html">Talks</a></li>
@@ -49,5 +47,15 @@
       </div>
     </section>
   </div>
+  <script>
+    function classToggle(e) {
+      e.stopPropagation();
+      const navs = document.querySelectorAll('.menu');
+      navs.forEach(nav => nav.classList.toggle('menu-toggleShow'));
+    };
+
+    document.querySelector('.menu-toggle')
+      .addEventListener('click', classToggle);
+  </script>
 </body>
 </html>
