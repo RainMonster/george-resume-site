@@ -8,23 +8,14 @@
   font-family: "Eczar";
   src: url('./fonts/Eczar/Eczar-Regular.ttf');
 }
-
 @font-face {
   font-family: "Fjalla One";
   src: url('./fonts/Fjalla_One/FjallaOne-Regular.ttf');
 }
-
 @font-face {
   font-family: "Gentium Basic";
   src: url('./fonts/Gentium_Basic/GentiumBasic-Regular.ttf');
 }
-
-.main-container {
-/*  height: 100vh;
-  width: 100vw;*/
-  /*padding: 1rem;*/
-}
-
 
 .color-primary-0 { color: #93A1A1 } /* Main Primary color */
 .color-primary-1 { color: #FAFAFA }
@@ -136,7 +127,6 @@ nav.menu-container {
   font-size: 1.25rem;
   background-color: #E0E0E0;
   box-shadow: 0 1px 2px #708787;
-  /*border: 1px solid #C9CECE;*/
   border-radius: 2px;
 }
 
@@ -155,7 +145,6 @@ nav.menu-container {
 .content-title {
   border-bottom: 1px solid #708787;
   width: 60%;
-  /*box-shadow: 0 0 5px #708787;*/
   display: flex;
   justify-content: center;
 }
@@ -195,9 +184,18 @@ nav.menu-container {
   margin-bottom: 0.25rem;
 }
 
-@media only screen and (max-width: 926px) {
+@media screen and (max-width: 926px) {
   .header-container {
     height: inherit;
+  }
+  .banner {
+    flex-direction: column;
+  }
+  .item.name {
+    padding-left: 1.5rem;
+  }
+  .item.email {
+    padding-top: 0.5rem;
   }
   .menu-toggle {
     display: initial;
@@ -208,19 +206,19 @@ nav.menu-container {
   }
   .menu-container ul.menu {
     flex-direction: column;
-    align-self: flex-end;
     display: none;
     width: 100%;
   }
   .menu-container ul.menu.menu-toggleShow {
     display: flex;
   }
+  .menu-container ul.menu li {
+    width: 100%;
+  }
   .menu-container ul.menu li a {
     border-radius: 0;
-
   }
   .menu-container ul.menu li a:hover {
     box-shadow: 0 1px 2px #708787;
-    /*box-shadow: 0;*/
   }
 }
